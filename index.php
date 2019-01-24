@@ -20,7 +20,7 @@ $systemtime = date("Y-m-d H:i:s",time());
 /*   以HTML表格的形式将以上获取到的服务器信息输出给客户端浏览器          */
 /*  *******************************************************************  */
 echo "<table align=center cellspacing=0 cellpadding=0>";
-echo "<caption> <h2> <<系统信息>> VsCode</h2> </caption>";
+echo "<caption> <h2> <<系统信息>> VS code VsCode</h2> </caption>";
 echo "<tr> <td> Source：    </td> <td> From GitHub        </td> </tr>";
 echo "<tr> <td> Web服务器：    </td> <td> $sysos        </td> </tr>";
 echo "<tr> <td> PHP版本：      </td> <td> $sysversion   </td> </tr>";
