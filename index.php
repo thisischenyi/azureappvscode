@@ -31,13 +31,15 @@ echo "<tr> <td> 域名：   </td> <td> $domian   </td> </tr>";
 echo "<tr> <td> 服务器端口：   </td> <td> $serverport   </td> </tr>";
 echo "<tr> <td> CPU数量：   </td> <td> $cpu   </td> </tr>";
 echo "</table>";
-echo "author CY";
 ?>
 <br /><br />
 <div align="center" style="border:1px solid red"><br />
 <a href="test.php"><button>Echo Your NAME/AGE</button></a><br /><br />
 <a href="phpinfo.php"><button>PHPINFO</button></a><br /><br />
 <a href="hello.php"><button>Hello World!</button></a><br /><br />
+</div>
+<div align="center"><br />
+test symbol
 </div>
 <body>
 </html>
