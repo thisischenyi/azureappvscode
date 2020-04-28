@@ -1,0 +1,21 @@
+{
+	"name": "SourceDataset_8q5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data_0c36eec9-32f0-4ef2-8784-879034b45cd8_732b6db8-5cae-435f-885c-62c952f08bd0.txt",
+				"folderPath": "largetable",
+				"container": "bigquery"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

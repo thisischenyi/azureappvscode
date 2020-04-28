@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_1e7",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GoogleBigQuery1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "GoogleBigQueryObject",
+		"schema": [],
+		"typeProperties": {
+			"dataset": "babyname",
+			"table": "201705"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

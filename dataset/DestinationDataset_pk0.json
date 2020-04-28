@@ -1,0 +1,21 @@
+{
+	"name": "DestinationDataset_pk0",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "chinaeast2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "fromus",
+				"folderPath": "fromhk",
+				"container": "bigquery"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

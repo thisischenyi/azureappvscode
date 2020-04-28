@@ -1,0 +1,20 @@
+{
+	"name": "SourceDataset_e1d",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GoogleCloudStorageS3API1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "gcschenyi-eu",
+				"fileName": "large-eu"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

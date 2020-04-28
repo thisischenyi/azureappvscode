@@ -1,0 +1,61 @@
+{
+	"name": "CopyPipeline_frombigquery2mooncake",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_1e7",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "babyname.names_2014"
+					},
+					{
+						"name": "Destination",
+						"value": "bigquery//"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "GoogleBigQuerySource"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 32
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_1e7",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_1e7",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
